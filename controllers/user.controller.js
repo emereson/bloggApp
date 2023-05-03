@@ -25,7 +25,7 @@ exports.findAll = catchAsync(async (req, res) => {
     return user;
   });
 
-  const userResolved = await Promise.all(userPromisess);
+  const userResolved = await Promise.all(userPromises);
 
   return res.status(200).json({
     status: 'success',
